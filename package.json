@@ -1,7 +1,7 @@
 {
   "name": "troops-website",
   "private": false,
-  "homepage": "https://manuelbiermann.github.io/troops-website",
+  "homepage": "https://the-troops.github.io/troops-website",
   "type": "module",
   "scripts": {
     "build": "react-router build",

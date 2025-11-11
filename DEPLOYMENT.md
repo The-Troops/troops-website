@@ -33,7 +33,7 @@ This uses the `gh-pages` package to push directly to the `gh-pages` branch.
 ## 🌐 Your Site URL
 
 Once deployed, your site will be available at:
-**https://manuelbiermann.github.io/troops-website**
+**https://the-troops.github.io/troops-website**
 
 ## 📋 What Was Configured
 
@@ -42,16 +42,20 @@ Once deployed, your site will be available at:
 - ✅ Set `basename: "/troops-website"` for GitHub Pages subdirectory
 
 ### 2. Package.json
-- ✅ Updated homepage URL to `https://manuelbiermann.github.io/troops-website`
+- ✅ Updated homepage URL to `https://the-troops.github.io/troops-website`
 - ✅ Fixed deploy script to use correct build directory (`build/client`)
 
-### 3. GitHub Actions (`.github/workflows/deploy.yml`)
+### 3. Vite Config (`vite.config.ts`)
+- ✅ Set `base: "/troops-website/"` for production builds
+- ✅ Uses root path `/` for local development
+
+### 4. GitHub Actions (`.github/workflows/deploy.yml`)
 - ✅ Automatic deployment on push to `main` branch
 - ✅ Manual deployment trigger via GitHub UI (workflow_dispatch)
 - ✅ Runs typecheck before building
 - ✅ Uploads build artifacts to GitHub Pages
 
-### 4. SPA Routing Support
+### 5. SPA Routing Support
 - ✅ Created `public/.nojekyll` to disable Jekyll processing
 - ✅ Created `public/404.html` to handle client-side routing
 - ✅ Added redirect handler in `app/root.tsx` Layout component
