@@ -70,4 +70,4 @@ pnpm run build
 
 ### Deployment to GitHub Pages
 
-This site is configured to deploy to GitHub Pages and will be available at [jointhetroops.com](https://jointhetroops.com).
+This site is configured to deploy to GitHub Pages and will be available at [jointhetroops.com](https://jointhetroops.com). For questions email info@jointhetroops.com.
